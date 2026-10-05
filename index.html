@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szegedi Osztálykirándulás</title>
+</head>
+
+<body>
+    <img src="kepek/szeged.png" alt="Szeged">
+    <h1 style="font-weight: bolder;">Szegedi Osztálykirándulás</h1>
+    <p style="font-style: italic;">Egy felejthetetlen élmény</p>
+    <a href="#jelentkezesiurlap">Kattints a jelentkezési űrlaphoz</a>
+
+    <h2>Programok</h2>
+    <ol>
+        <li>Utazás <a href="https://hu.wikipedia.org/wiki/Szeged" target="_blank">Szegedre</a></li>
+        <li>Dóm tér és a Fogadalmi templom</li>
+        <a href="https://hu.wikipedia.org/wiki/D%C3%B3m_t%C3%A9r_(Szeged)" style="font-style: italic;">Dóm Tér
+            Wikipédia</a>
+        <li>Móra Ferenc Múzeum</li>
+        <ol>
+            <li>állandó kiállítás</li>
+            <li>időszaki kiállítás</li>
+        </ol>
+        <li>Ebéd a belvárosban</li>
+        <li>Hazautazás</li>
+    </ol>
+    <h3>Mit hozzatok srácok!</h3>
+    <ul>
+        <li>Személyi igazolvány</li>
+        <li>Innivaló & Ennivaló</li>
+        <li>Esőkabát</li>
+        <li>Pénz (ajánlott minimukm 10000 Ft)</li>
+        <li>Alkohol(t ne)</li>
+    </ul>
+
+    <h2>Tudnivalók</h2>
+
+    <h3>Gyülekező</h3>
+    <p> 6:30, az iskola udvara</p>
+
+    <h3>Indulás</h3>
+    <p> 6:45-kor busszal</p>
+
+    <h3>Kisérő tanár</h3>
+    <a href="mailto:anna.kovacs@iskola.hu">Kovács Anna - Kattints az e-mailemhez</a>
+    <p style="font-style: italic;">"Az iskolánk legmenőbb tanára." - 12/D osztályos tanuló</p>
+    <p>E-mail: anna.kovacs@iskola.hu</p>
+
+    <img src="kepek/szeged2.jpg" alt="Szeged Felülnézetben">
+
+    <h2>Költségek</h2>
+    <table>
+        <tr>
+            <th>Tétel</th>
+            <th>Ár</th>
+        </tr>
+        <tr>
+            <td>Utazás</td>
+            <td>2500 Ft</td>
+        </tr>
+        <tr>
+            <td>Belépő</td>
+            <td>1800 Ft</td>
+        </tr>
+        <tr>
+            <td>Ebéd</td>
+            <td>1800 Ft</td>
+        </tr>
+        <tr>
+            <td colspan="2">Összesen : 6500 Ft</td>
+        </tr>
+    </table>
+
+    <h2 id="jelentkezesiurlap">Jelentkezési űrlap</h2>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="n">Név:</label>
+        <input type="text" id="n" name="nev" placeholder="pl.:Kovács Kata" required><br><br>
+
+        <label for="e">E-mail:</label>
+        <input type="email" id="e" name="email" placeholder="pl.:anna.kovacs@di.hu" required><br> <br>
+
+        <label for="t">Telefonszám</label>
+        <input type="tel" name="telephone" id="t" placeholder="pl.: +36 70 561 6763" required><br> <br>
+
+        <label for="num">Hány fővel jössz (magadat is beleértve):</label>
+        <input type="number" name="number" id="num" placeholder="pl.:3" value="1" min="1" max="4" required><br> <br>
+
+        <p>Melyik buszra ülsz?</p>
+        <input type="radio" id="p" name="busz" value="party" checked>
+        <label for="v">Party Busz</label>
+        <input type="radio" id="u" name="busz" value="uncsi">
+        <label for="vs">Uncsi Busz</label> <br><br>
+
+        <label for="etkezes">Étkezés:</label> <br>
+        <select id="etkezes" name="etkezes" required>
+            <option value="">-- válassz --</option>
+            <option value="husosmenu">Húsos menü</option>
+            <option value="vegetarianus">Vegetáriánus menü</option>
+            <option value="hozokmagammal">Hozok magammal ételt</option> 
+        </select> <br><br>
+
+        <label for="extra">Extra programok:</label> <br>
+        <select id="extra" name="extra">
+            <option value="">-- válassz --</option>
+            <option value="varlatogatas">Várlátogatás (+1750 Ft)</option>
+            <option value="setahajozas">Sétahajózás (+5400 Ft)</option> 
+        </select> <br><br>
+
+        <label for="sz">Szülőm tud a kirándulásról és beleegyezett</label>
+        <input type="checkbox" name="sz" id="sz" value="igen" required> <br>
+
+        <br><button type="submit">Jelentkezem</button>
+    </form>
+
+
+    <footer>
+        <p>&copy; HTML - Készítette: Pimbor Dániel </p>
+    </footer>
+
+</body>
+
+</html>
